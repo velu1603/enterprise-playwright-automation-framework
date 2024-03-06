@@ -52,3 +52,10 @@ Call log:
 2024-03-06T13:50:50+05:30 [info]: Service Title is visible
 2024-03-06T13:50:50+05:30 [info]: Test for login is completed
 2024-03-06T13:50:52+05:30 [info]: Auth state is saved
+2024-03-06T19:43:21+05:30 [info]: Navigated to login.salesforce.com
+2024-03-06T19:43:26+05:30 [info]: Filled username
+2024-03-06T19:43:28+05:30 [info]: Filled pasword
+2024-03-06T19:43:32+05:30 [info]: Clicked login button
+2024-03-06T19:43:46+05:30 [info]: Service Title is visible
+2024-03-06T19:43:46+05:30 [info]: Test for login is completed
+2024-03-06T19:43:47+05:30 [info]: Auth state is saved

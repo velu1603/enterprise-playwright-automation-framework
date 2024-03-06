@@ -6,7 +6,7 @@ import { decrypt } from "../utils/CryptojsUtil";
 
 const authFile = "src/config/auth.json";
 
-test.skip("simple login test", async ({ page }) => {
+test("simple login test", async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.navigateToLoginPage();
   await loginPage.fillUsername(process.env.userid!);
@@ -18,7 +18,7 @@ test.skip("simple login test", async ({ page }) => {
   logger.info("Auth state is saved");
 });
 
-test("Login with auth file", async ({ browser }) => {
+test.skip("Login with auth file", async ({ browser }) => {
   const context = await browser.newContext({ storageState: authFile });
   const page = await context.newPage();
   await page.goto(
