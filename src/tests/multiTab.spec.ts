@@ -1,16 +1,7 @@
 import {test, expect} from "@playwright/test"
 import logger from "../utils/LoggerUtil";
 
-// test('@multiTab Multi tabbing', async ({ page,context }) => {   
-//     await page.goto("/",{ waitUntil: 'domcontentloaded' });       
-//     await page.locator('#acceptCookieButton').click();
-//     const newTab = await context.newPage();
-//     await newTab.goto(https://qa-atlas/home/home,{ waitUntil: 'domcontentloaded' })   
-//     await page.bringToFront()
-//     await newTab.close()
-//     await page.pause()
 
-//  }) 
 
 //  test('@multiTab Multi tabbing', async ({ browser }) => {   
 //    const context = await browser.newContext()
