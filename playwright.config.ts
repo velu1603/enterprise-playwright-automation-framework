@@ -18,7 +18,7 @@ if (!process.env.NODE_ENV) {
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  timeout: 45000,
+  timeout: 60000,
 
   testDir: "./src/tests",
   /* Run tests in files in parallel */

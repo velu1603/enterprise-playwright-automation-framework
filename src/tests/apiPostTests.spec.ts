@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 
+
 const baseURL = "https://automationintesting.online/"
 
 test("@POST new booking with full body @happy", async ({ request }) => {
@@ -24,6 +25,5 @@ test("@POST new booking with full body @happy", async ({ request }) => {
 
       const body = await response.json();
       expect(body.bookingid).toBeGreaterThan(1);
-
    
 })

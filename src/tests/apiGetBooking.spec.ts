@@ -1,18 +1,20 @@
 import { test, expect } from "@playwright/test";
 import logger from "../utils/LoggerUtil";
+import {createCookies,createToken} from "../lib/auth"
 
 const baseURL = "https://automationintesting.online/"
-const savedToken= "STbg2e7upZNg4ULF"
+ let savedToken: string;
+test.beforeAll(async () => {  
+   savedToken = await createToken();  
+});
 
-test.skip("@apiTest GET booking summary", async ({request})=>{
+test("@apiGet GET booking summary", async ({request})=>{
     const response = await request.get("https://automationintesting.online/booking/summary?roomid=1");
     expect(response.status()).toBe(200);
     const body = await response.json();
-    console.log(JSON.stringify(body));
-    logger.info(`Response body returned is ${JSON.stringify(body)}`);    
-})
+    })
 
-test.describe("@apiTest booking/summary?roomid={id}", async () => {
+test.describe("@apiGet booking/summary?roomid={id}", async () => {
     test("GET booking summary with specific room id", async ({ request }) => {
       const response = await request.get(`${baseURL}booking/summary?roomid=1`);
   
@@ -24,7 +26,7 @@ test.describe("@apiTest booking/summary?roomid={id}", async () => {
     });
   });
 
-  test.only("@apiTest GET all bookings with details", async ({ request }) => {
+  test("@apiGet GET all bookings with details", async ({ request }) => {
     const response = await request.get(`${baseURL}booking/`, {
       headers: { cookie: `token=${savedToken}` },
     });
@@ -48,7 +50,5 @@ test.describe("@apiTest booking/summary?roomid={id}", async () => {
       return false;
     }
   }
-function auth(arg0: string, arg1: string) {
-  throw new Error("Function not implemented.");
-}
+
 

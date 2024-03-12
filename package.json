@@ -10,6 +10,7 @@
     "test:multiTab": "npx playwright test --grep @multiTab --headed --debug --project=chromium",
     "test:popUp": "npx playwright test --grep @popUp --headed --debug --project=chromium",
     "test:apiTest": "npx playwright test --grep @apiTest --project=chromium",
+    "test:apiGetTest": "npx playwright test --grep @apiGet --project=chromium",
     "test:post": "npx playwright test --grep @POST --project=chromium" 
 
   },
