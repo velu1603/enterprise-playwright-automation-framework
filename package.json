@@ -11,13 +11,13 @@
     "test:popUp": "npx playwright test --grep @popUp --headed --debug --project=chromium",
     "test:apiTest": "npx playwright test --grep @apiTest --project=chromium",
     "test:apiGetTest": "npx playwright test --grep @apiGet --project=chromium",
-    "test:post": "npx playwright test --grep @POST --project=chromium" 
-
+    "test:post": "npx playwright test --grep @POST --project=chromium"
   },
   "keywords": [],
   "author": "Velan Chinnaiah",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@playwright/test": "^1.42.1",
     "@types/crypto-js": "^4.2.1",
     "@types/node": "^20.10.3",
@@ -30,7 +30,6 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@faker-js/faker": "^8.3.1",
     "crypto-js": "^4.2.0",
     "csv-writer": "^1.6.0",
     "csvtojson": "^2.0.10",
