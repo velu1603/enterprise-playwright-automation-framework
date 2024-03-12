@@ -4,7 +4,7 @@ import logger from "../utils/LoggerUtil";
 import { decrypt } from "../utils/CryptojsUtil";
 
 
-const authFile = "src/config/auth.json";
+//const authFile = "src/config/auth.json";
 
 test("Simple login test", async ({ page }) => {
   const loginPage = new LoginPage(page);
@@ -14,15 +14,15 @@ test("Simple login test", async ({ page }) => {
   const homePage = await loginPage.clickLoginButton();
   await homePage.expectServiceTitleToBeVisible();
   logger.info("Test for login is completed");
-  await page.context().storageState({ path: authFile });
+  //await page.context().storageState({ path: authFile });
   logger.info("Auth state is saved");
 });
 
-test.skip("Login with auth file", async ({ browser }) => {
-  const context = await browser.newContext({ storageState: authFile });
-  const page = await context.newPage();
-  await page.goto(
-    "https://sogetiuk2-dev-ed.develop.lightning.force.com/lightning/setup/SetupOneHome/home"
-  );
-  await expect(page.getByRole("link", { name: "Accounts" })).toBeVisible();
-});
+// test.skip("Login with auth file", async ({ browser }) => {
+//   const context = await browser.newContext({ storageState: authFile });
+//   const page = await context.newPage();
+//   await page.goto(
+//     "https://sogetiuk2-dev-ed.develop.lightning.force.com/lightning/setup/SetupOneHome/home"
+//   );
+//   await expect(page.getByRole("link", { name: "Accounts" })).toBeVisible();
+// });
