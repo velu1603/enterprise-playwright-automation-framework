@@ -4,7 +4,7 @@ import logger from "../utils/LoggerUtil";
 import { decrypt } from "../utils/CryptojsUtil";
 
 
-//const authFile = "src/config/auth.json";
+const authFile = "src/config/auth.json";
 
 test("Simple login test", async ({ page }) => {
   const loginPage = new LoginPage(page);
@@ -14,7 +14,7 @@ test("Simple login test", async ({ page }) => {
   const homePage = await loginPage.clickLoginButton();
   await homePage.expectServiceTitleToBeVisible();
   logger.info("Test for login is completed");
-  //await page.context().storageState({ path: authFile });
+  await page.context().storageState({ path: authFile });
   logger.info("Auth state is saved");
 });
 
@@ -26,3 +26,9 @@ test("Simple login test", async ({ page }) => {
 //   );
 //   await expect(page.getByRole("link", { name: "Accounts" })).toBeVisible();
 // });
+
+test("Sample env test", async ({ page }) => {
+  console.log(process.env.NODE_ENV);
+  console.log(process.env.userid);
+  console.log(process.env.password);  
+});
