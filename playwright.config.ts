@@ -47,10 +47,13 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    // {
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
-    // },
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'], 
+      viewport: { width: 1500, height: 730 },    
+      headless:false 
+    }, 
+    },
 
     // {
     //   name: 'firefox',

@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "lint-fix": "eslint . --fix"
+    "lint-fix": "eslint . --fix",
+    "test": "npx playwright test",
+    "test:multiTab": "npx playwright test --grep @multiTab --headed --debug --project=chromium",
+    "test:popUp": "npx playwright test --grep @popUp --headed --debug --project=chromium",
+    "test:apiTest": "npx playwright test --grep @apiTest"
+
   },
   "keywords": [],
   "author": "Velan Chinnaiah",

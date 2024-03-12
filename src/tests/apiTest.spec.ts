@@ -1,8 +1,9 @@
 import { test, expect } from "@playwright/test";
 
-test.skip("API test with existing context", async ({ page }) => {
+test("@apiTest API test with existing context", async ({ page }) => {
+  const baseURL= "https://reqres.in";
   const context = page.request;
-  const response = await (await context.get("/api/users?page=2")).json();
+  const response = await (await context.get(`${baseURL}/api/users?page=2`)).json();
   console.log(response);
   expect(response).toHaveProperty("page");
   expect(response).toHaveProperty("per_page");
@@ -41,7 +42,7 @@ test.skip("API test with existing context", async ({ page }) => {
   }
 });
 
-test("API test with new context", async ({ playwright }) => {
+test.skip("@ApiTest API test with new context", async ({ playwright }) => {
   const apirequest = playwright.request;
   const newcontext = await apirequest.newContext({
     baseURL: "https://cat-fact.herokuapp.com",

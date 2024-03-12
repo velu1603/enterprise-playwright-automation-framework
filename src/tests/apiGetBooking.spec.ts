@@ -2,9 +2,9 @@ import { test, expect } from "@playwright/test";
 import logger from "../utils/LoggerUtil";
 
 const baseURL = "https://automationintesting.online/"
-const savedToken= "7yrFex6VJJ17jKjd"
+const savedToken= "STbg2e7upZNg4ULF"
 
-test.skip("GET booking summary", async ({request})=>{
+test.skip("@apiTest GET booking summary", async ({request})=>{
     const response = await request.get("https://automationintesting.online/booking/summary?roomid=1");
     expect(response.status()).toBe(200);
     const body = await response.json();
@@ -12,7 +12,7 @@ test.skip("GET booking summary", async ({request})=>{
     logger.info(`Response body returned is ${JSON.stringify(body)}`);    
 })
 
-test.describe("booking/summary?roomid={id}", async () => {
+test.describe("@apiTest booking/summary?roomid={id}", async () => {
     test("GET booking summary with specific room id", async ({ request }) => {
       const response = await request.get(`${baseURL}booking/summary?roomid=1`);
   
@@ -24,7 +24,7 @@ test.describe("booking/summary?roomid={id}", async () => {
     });
   });
 
-  test.only("GET all bookings with details", async ({ request }) => {
+  test.only("@apiTest GET all bookings with details", async ({ request }) => {
     const response = await request.get(`${baseURL}booking/`, {
       headers: { cookie: `token=${savedToken}` },
     });
@@ -48,3 +48,7 @@ test.describe("booking/summary?roomid={id}", async () => {
       return false;
     }
   }
+function auth(arg0: string, arg1: string) {
+  throw new Error("Function not implemented.");
+}
+

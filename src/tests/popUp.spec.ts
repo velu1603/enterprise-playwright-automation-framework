@@ -14,7 +14,7 @@ import {test, expect} from "@playwright/test"
 //     await page.locator('a.close-button').click()
 // }) 
 
-test('@popUp Browser Window Based Popup using Popup Event', async({page})=>{
+test('@popUp browser Window Based Popup using Popup Event', async({page})=>{
     await page.goto("http://autopract.com/selenium/popup/")
 
     const [myPopup] = await Promise.all([

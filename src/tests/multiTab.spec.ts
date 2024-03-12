@@ -26,7 +26,7 @@ import logger from "../utils/LoggerUtil";
 
 test('@multiTab Open new tab', async({context, page})=>{
   const url = "https://www.checklyhq.com/"
-    await page.goto(url)
+         await page.goto(url);
           logger.info(`Currently in parent page : ${url}`);
           const [newPage] = await Promise.all([
             context.waitForEvent('page'),
@@ -34,11 +34,10 @@ test('@multiTab Open new tab', async({context, page})=>{
           ])
           const newUrl= newPage.url()
           logger.info(`Switched to ${newUrl}`);
-          await page.screenshot({path:'screenshot-tab-old.png'})
-          
+          await page.screenshot({path:'screenshot-tab-old.png'})          
           await newPage.getByLabel('email').fill('admin@admin.com')
-         await newPage.screenshot({ path: 'screenshot-tab-new.png' })
-         await newPage.close();
-         await page.screenshot({path:'screenshot-tab-old_1.png'})  
+          await newPage.screenshot({ path: 'screenshot-tab-new.png' })
+          await newPage.close();
+          await page.screenshot({path:'screenshot-tab-old_1.png'})  
    })
   
