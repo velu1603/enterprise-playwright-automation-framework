@@ -6,7 +6,7 @@ import { decrypt } from "../utils/CryptojsUtil";
 
 const authFile = "src/config/auth.json";
 
-test("Simple login test", async ({ page }) => {
+test("Simple login test",{tag: ['@smoke', '@regression']}, async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.navigateToLoginPage();
   await loginPage.fillUsername(process.env.userid!);

@@ -11,7 +11,7 @@ test.beforeAll(async () => {
 test("GET booking summary using tags from latest playwright version",{tag:'@apiGet'}, async ({request,baseURL})=>{
     //const response = await request.get("https://automationintesting.online/booking/summary?roomid=1");
     const response = await request.get("booking/summary?roomid=1");
-    logger.info(`Get request for ${baseURL}`)
+    logger.info(`Get request for ${baseURL}booking/summary?roomid=1`)
     expect(response.status()).toBe(200);
     const body = await response.json();
     })
