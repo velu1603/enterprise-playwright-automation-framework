@@ -1,7 +1,7 @@
 {
   "name": "enterprise-playwright-automation-framework",
   "version": "1.0.0",
-  "description": "Playwright framework for both API & Web automation",
+  "description": "Playwright framework for API & Web automation",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",

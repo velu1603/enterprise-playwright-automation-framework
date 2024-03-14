@@ -54,7 +54,7 @@ export default defineConfig({
           },
         ],
         environmentInfo: {
-          framework: "playwright",
+          framework: "Playwright framework for API & Web automation",
         },
       },
     ],

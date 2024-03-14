@@ -8,7 +8,7 @@ test.beforeAll(async () => {
    savedToken = await createToken();  
 });
 
-test("@apiGet GET booking summary", async ({request,baseURL})=>{
+test("GET booking summary using tags from latest playwright version",{tag:'@apiGet'}, async ({request,baseURL})=>{
     //const response = await request.get("https://automationintesting.online/booking/summary?roomid=1");
     const response = await request.get("booking/summary?roomid=1");
     logger.info(`Get request for ${baseURL}`)
@@ -16,7 +16,7 @@ test("@apiGet GET booking summary", async ({request,baseURL})=>{
     const body = await response.json();
     })
 
-test.describe("@apiGet booking/summary?roomid={id}", async () => {
+test.describe("GET booking/summary?roomid={id}",{tag:'@apiGet'}, async () => {
     test("GET booking summary with specific room id", async ({ request,baseURL }) => {
       const response = await request.get(`booking/summary?roomid=1`);
       logger.info(`Get request for ${baseURL}`)  
@@ -28,7 +28,7 @@ test.describe("@apiGet booking/summary?roomid={id}", async () => {
     });
   });
 
-  test("@apiGet GET all bookings with details", async ({ request,baseURL }) => {
+  test("GET all bookings with details",{tag:'@apiGet'}, async ({ request,baseURL }) => {
     const response = await request.get(`booking/`, {
       headers: { cookie: `token=${savedToken}` },
     });
