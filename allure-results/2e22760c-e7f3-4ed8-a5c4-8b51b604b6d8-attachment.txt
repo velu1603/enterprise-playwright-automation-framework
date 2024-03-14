@@ -1,0 +1,4 @@
+SALT: undefined
+Encrypted: U2FsdGVkX1/kE6R5Y2vfw9mw6nW+7xaX4DX2iR7inno=
+Decrypted: 
+Encryption complete. Updated .env file.

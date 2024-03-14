@@ -9,7 +9,7 @@ const ENV = process.env.npm_config_ENV;
  */
 // require('dotenv').config();
 
-if (!ENV || ![`qa`, `dev`, `qaApi`, `devApi`].includes(ENV)) {
+if (!ENV || ![`qa`,`test` ,`dev`, `qaApi`, `devApi`].includes(ENV)) {
   console.log(`Please provide a correct environment value after command like "--ENV=qa|dev|qaApi|devApi"`);
   process.exit();
 }

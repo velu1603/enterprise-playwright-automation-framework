@@ -15,7 +15,9 @@
     "test:apiGetENV": "npx playwright test --grep @apiGet --project=API",
     "test:post": "npx playwright test --grep @POST --project=chromium",
     "test:smoke": "npx playwright test --grep @smoke --project=chromium",
-    "test:regr": "npx playwright test --grep @regression --project=chromium"
+    "test:regr": "npx playwright test --grep @regression --project=chromium",
+    "test:encrpt": "npx playwright test --grep @encypt --project=chromium"
+    
   },
   "keywords": [],
   "author": "Velan Chinnaiah",

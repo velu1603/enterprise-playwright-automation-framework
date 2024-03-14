@@ -22,7 +22,7 @@ export function encryptEnvFile() {
   const envLines = envFileContent.split("\n");
 
   // Encrypt values and update the array
-  const encryptedLines = envLines.map((line) => {
+  const encryptedLines = envLines.map((line: { split: (arg0: string) => [any, any]; }) => {
     const [key, value] = line.split("=");
 
     if (value) {
@@ -49,7 +49,7 @@ export function decryptEnvFile() {
   const envLines = envFileContent.split("\n");
 
   // Encrypt values and update the array
-  const decryptedLines = envLines.map((line) => {
+  const decryptedLines = envLines.map((line: { split: (arg0: string) => [any, any]; }) => {
     const [key, value] = line.split("=");
 
     if (value) {
