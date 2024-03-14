@@ -1,3 +1,0 @@
-SALT: undefined
-Encypted: U2FsdGVkX1+pu0Fo2AzZ+MuOw28qvpEbtVsajU9lYSs=
-Decypted: 

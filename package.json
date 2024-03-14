@@ -16,7 +16,11 @@
     "test:post": "npx playwright test --grep @POST --project=chromium",
     "test:smoke": "npx playwright test --grep @smoke --project=chromium",
     "test:regr": "npx playwright test --grep @regression --project=chromium",
-    "test:encrpt": "npx playwright test --grep @encypt --project=chromium"
+    "test:encrpt": "npx playwright test --grep @encypt --project=chromium",
+    "test:fixtureTests": "npx playwright test --grep @fixtureTests --project=chromium"
+
+
+    
     
   },
   "keywords": [],

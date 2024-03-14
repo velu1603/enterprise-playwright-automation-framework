@@ -1,7 +1,0 @@
-2024-03-14T14:44:30Z [info]: Navigated to login.salesforce.com
-2024-03-14T14:44:31Z [info]: Filled username
-2024-03-14T14:44:32Z [info]: Filled pasword
-2024-03-14T14:44:36Z [info]: Clicked login button
-2024-03-14T14:44:49Z [info]: Service Title is visible
-2024-03-14T14:44:49Z [info]: Test for login is completed
-2024-03-14T14:44:59Z [info]: Auth state is saved
