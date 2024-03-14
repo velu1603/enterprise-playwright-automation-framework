@@ -1,10 +1,18 @@
 import { defineConfig, devices } from "@playwright/test";
+import { testConfig } from "../testConfig";
+import { testPlanFilter } from "allure-playwright/dist/testplan";
+const ENV = process.env.npm_config_ENV;
 
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
 // require('dotenv').config();
+
+if (!ENV || ![`qa`, `dev`, `qaApi`, `devApi`].includes(ENV)) {
+  console.log(`Please provide a correct environment value after command like "--ENV=qa|dev|qaApi|devApi"`);
+  process.exit();
+}
 
 if (!process.env.NODE_ENV) {
   require("dotenv").config({ path: `${__dirname}//src//config//.env` });
@@ -31,7 +39,26 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: "html",
+  reporter: [
+    ["html"],
+    [
+      "allure-playwright",
+      {
+        detail: true,
+        outputFolder: "allure-results",
+        suiteTitle: true,
+        categories: [
+          {
+            name: "Outdated tests",
+            messageRegex: ".*FileNotFound.*",
+          },
+        ],
+        environmentInfo: {
+          framework: "playwright",
+        },
+      },
+    ],
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -84,6 +111,12 @@ export default defineConfig({
       name: "Google Chrome",
       use: { ...devices["Desktop Chrome"], channel: "chrome" },
     },
+    {
+      name: `API`,
+      use: {
+        baseURL: testConfig[ENV]
+      }
+    }
   ],
 
   /* Run your local dev server before starting the tests */

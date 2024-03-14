@@ -10,7 +10,9 @@
     "test:multiTab": "npx playwright test --grep @multiTab --headed --debug --project=chromium",
     "test:popUp": "npx playwright test --grep @popUp --headed --debug --project=chromium",
     "test:apiTest": "npx playwright test --grep @apiTest --project=chromium",
+    "test:apiTestENV": "npx playwright test --grep @apiTest --project=API",
     "test:apiGetTest": "npx playwright test --grep @apiGet --project=chromium",
+    "test:apiGetENV": "npx playwright test --grep @apiGet --project=API",
     "test:post": "npx playwright test --grep @POST --project=chromium"
   },
   "keywords": [],
@@ -22,6 +24,8 @@
     "@types/crypto-js": "^4.2.1",
     "@types/node": "^20.10.3",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "allure-commandline": "^2.27.0",
+    "allure-playwright": "^2.14.1",
     "eslint": "^8.56.0",
     "eslint-config-standard-with-typescript": "^43.0.1",
     "eslint-plugin-import": "^2.29.1",
