@@ -9,8 +9,8 @@ const ENV = process.env.npm_config_ENV;
  */
 // require('dotenv').config();
 
-if (!ENV || ![`qa`,`test` ,`dev`, `qaApi`, `devApi`].includes(ENV)) {
-  console.log(`Please provide a correct environment value after command like "--ENV=qa|dev|qaApi|devApi"`);
+if (!ENV || ![`qa`,`qaUrl`,`test` ,`dev`, `qaApi`, `devApi`].includes(ENV)) {
+  console.log(`Please provide a correct environment value after command like "--ENV=qa|qaUrl|dev|qaApi|devApi"`);
   process.exit();
 }
 
@@ -39,6 +39,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  grep: testPlanFilter(),
   reporter: [
     ["html"],
     [
@@ -63,7 +64,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-    baseURL: "https://login.salesforce.com",
+    //baseURL: "https://login.salesforce.com",
     // baseURL: "https://reqres.in",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
@@ -78,7 +79,9 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'], 
       viewport: { width: 1500, height: 730 },    
-      headless:false 
+      headless:false,      
+      baseURL: testConfig[ENV]
+      
     }, 
     },
 

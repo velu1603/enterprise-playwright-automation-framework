@@ -50,3 +50,13 @@ Call log:
 2024-03-14T18:28:11Z [info]: Filled pasword
 2024-03-14T18:28:13Z [info]: Clicked login button
 2024-03-14T18:28:22Z [info]: Service Title is visible
+2024-03-14T18:35:34Z [info]: Navigated to login.salesforce.com
+2024-03-14T18:35:34Z [info]: Filled username
+2024-03-14T18:35:34Z [info]: Filled pasword
+2024-03-14T18:35:36Z [info]: Clicked login button
+2024-03-14T18:35:44Z [info]: Service Title is visible
+2024-03-14T18:48:14Z [info]: Navigated to login.salesforce.com
+2024-03-14T18:48:14Z [info]: Filled username
+2024-03-14T18:48:14Z [info]: Filled pasword
+2024-03-14T18:48:16Z [info]: Clicked login button
+2024-03-14T18:48:24Z [info]: Service Title is visible
