@@ -1,62 +1,19 @@
-2024-03-14T14:44:30Z [info]: Navigated to login.salesforce.com
-2024-03-14T14:44:31Z [info]: Filled username
-2024-03-14T14:44:32Z [info]: Filled pasword
-2024-03-14T14:44:36Z [info]: Clicked login button
-2024-03-14T14:44:49Z [info]: Service Title is visible
-2024-03-14T14:44:49Z [info]: Test for login is completed
-2024-03-14T14:44:59Z [info]: Auth state is saved
-2024-03-14T17:10:39Z [info]: Navigated to login.salesforce.com
-2024-03-14T17:10:40Z [info]: Filled username
-2024-03-14T17:10:40Z [info]: Filled pasword
-2024-03-14T17:10:40Z [info]: Clicked login button
-2024-03-14T17:10:55Z [error]: Error clicking login button: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
-
-Locator: getByTitle('Service')
-Expected: visible
-Received: hidden
-Call log:
-  [2m- expect.toBeVisible with timeout 15000ms[22m
-[2m  - waiting for getByTitle('Service')[22m
-
-2024-03-14T17:12:34Z [info]: Navigated to login.salesforce.com
-2024-03-14T17:12:34Z [info]: Filled username
-2024-03-14T17:12:34Z [info]: Filled pasword
-2024-03-14T17:12:36Z [info]: Clicked login button
-2024-03-14T17:12:45Z [info]: Service Title is visible
-2024-03-14T17:12:45Z [info]: Test for login is completed
-2024-03-14T17:12:49Z [info]: Auth state is saved
-2024-03-14T17:43:22Z [info]: Navigated to login.salesforce.com
-2024-03-14T17:47:05Z [info]: Navigated to login.salesforce.com
-2024-03-14T17:47:06Z [info]: Filled username
-2024-03-14T17:47:06Z [info]: Filled pasword
-2024-03-14T17:47:07Z [info]: Clicked login button
-2024-03-14T17:47:16Z [info]: Service Title is visible
-2024-03-14T17:47:16Z [info]: Test for login is completed
-2024-03-14T17:47:19Z [info]: Auth state is saved
-2024-03-14T18:16:56Z [info]: Navigated to login.salesforce.com
-2024-03-14T18:16:56Z [info]: Filled username
-2024-03-14T18:16:56Z [info]: Filled pasword
-2024-03-14T18:16:58Z [info]: Clicked login button
-2024-03-14T18:17:07Z [info]: Service Title is visible
-2024-03-14T18:17:07Z [info]: Test for login is completed
-2024-03-14T18:17:10Z [info]: Auth state is saved
-2024-03-14T18:21:20Z [info]: Navigated to login.salesforce.com
-2024-03-14T18:21:21Z [info]: Filled username
-2024-03-14T18:21:21Z [info]: Filled pasword
-2024-03-14T18:21:23Z [info]: Clicked login button
-2024-03-14T18:21:33Z [info]: Service Title is visible
-2024-03-14T18:28:11Z [info]: Navigated to login.salesforce.com
-2024-03-14T18:28:11Z [info]: Filled username
-2024-03-14T18:28:11Z [info]: Filled pasword
-2024-03-14T18:28:13Z [info]: Clicked login button
-2024-03-14T18:28:22Z [info]: Service Title is visible
-2024-03-14T18:35:34Z [info]: Navigated to login.salesforce.com
-2024-03-14T18:35:34Z [info]: Filled username
-2024-03-14T18:35:34Z [info]: Filled pasword
-2024-03-14T18:35:36Z [info]: Clicked login button
-2024-03-14T18:35:44Z [info]: Service Title is visible
-2024-03-14T18:48:14Z [info]: Navigated to login.salesforce.com
-2024-03-14T18:48:14Z [info]: Filled username
-2024-03-14T18:48:14Z [info]: Filled pasword
-2024-03-14T18:48:16Z [info]: Clicked login button
-2024-03-14T18:48:24Z [info]: Service Title is visible
+2024-03-15T14:00:01Z [info]: Sending post request
+2024-03-15T14:00:01Z [info]: Request body sent [object Object]
+2024-03-15T14:51:39Z [info]: Sending post request
+2024-03-15T14:51:39Z [info]: Request body sent [object Object]
+2024-03-15T14:51:40Z [info]: Response body  [object Object]
+2024-03-15T14:55:04Z [info]: Sending post request
+2024-03-15T14:55:04Z [info]: Request body sent [object Object]
+2024-03-15T15:46:25Z [info]: Sending post request
+2024-03-15T15:46:25Z [info]: Request body sent [object Object]
+2024-03-15T15:46:26Z [info]: Response body  [object Object]
+2024-03-15T15:48:03Z [info]: Sending post request
+2024-03-15T15:48:03Z [info]: Request body sent [object Object]
+2024-03-15T15:57:08Z [info]: Sending post request
+2024-03-15T15:57:08Z [info]: Request body sent [object Object]
+2024-03-15T17:38:38Z [info]: Navigated to login.salesforce.com
+2024-03-15T17:38:39Z [info]: Filled username
+2024-03-15T17:38:39Z [info]: Filled pasword
+2024-03-15T17:38:41Z [info]: Clicked login button
+2024-03-15T17:38:50Z [info]: Service Title is visible

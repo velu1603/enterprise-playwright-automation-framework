@@ -1,5 +1,5 @@
 import { test as base, expect as defaultExpect } from "@playwright/test";
-import LoginPage from "../pages/LoginPage";
+import {LoginPage} from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import { decrypt } from "../utils/CryptojsUtil";
 

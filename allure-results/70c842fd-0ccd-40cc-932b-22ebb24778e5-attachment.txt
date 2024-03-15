@@ -1,5 +1,0 @@
-2024-03-14T18:35:34Z [info]: Navigated to login.salesforce.com
-2024-03-14T18:35:34Z [info]: Filled username
-2024-03-14T18:35:34Z [info]: Filled pasword
-2024-03-14T18:35:36Z [info]: Clicked login button
-2024-03-14T18:35:44Z [info]: Service Title is visible

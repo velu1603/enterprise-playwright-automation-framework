@@ -4,7 +4,7 @@ import HomePage from "./HomePage";
 import logger from "../utils/LoggerUtil";
 
 // Used super class constuctor (from Base page) => Can be implemented for other POM page classes
-export default class LoginPage extends BasePage {
+export class LoginPage extends BasePage {
   // private readonly usernameInputSelector = "#username";
   // private readonly passwordInputSelector = "#password";
   // private readonly loginButtonSelector = "#Login";

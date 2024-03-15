@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import LoginPage from "../pages/LoginPage";
+import {LoginPage} from "../pages/LoginPage";
 import logger from "../utils/LoggerUtil";
 import { decrypt, encrypt } from "../utils/CryptojsUtil";
 import { encryptEnvFile } from "../utils/EncryptEnvFile";
@@ -7,7 +7,7 @@ import { encryptEnvFile } from "../utils/EncryptEnvFile";
 
 const authFile = "src/config/auth.json";
 
-test("Simple login test",{tag: ['@smoke', '@regression']}, async ({ page }) => {
+test("Simple login test",{tag: ['@smoke', '@regression','@all','@web']}, async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.navigateToLoginPage();
   await loginPage.fillUsername(decrypt(process.env.userid!));

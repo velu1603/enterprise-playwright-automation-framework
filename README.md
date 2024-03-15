@@ -6,3 +6,4 @@ npm install crypto-js
 install --save-dev@types/crypto-js 
 
 ===
+npm run test:fixtureTests --ENV='qaUrl'
