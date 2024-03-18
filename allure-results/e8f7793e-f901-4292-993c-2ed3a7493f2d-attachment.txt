@@ -1,0 +1,12 @@
+2024-03-18T10:10:25Z [info]: Sending post request
+2024-03-18T10:10:25Z [info]: Request body sent [object Object]
+{
+  roomid: 8,
+  bookingid: undefined,
+  firstname: 'Greyson',
+  lastname: 'Monahan',
+  depositpaid: true,
+  email: 'Cassidy_Ortiz@yahoo.com',
+  phone: '(279) 909-1385 x7677',
+  bookingdates: { checkin: '2024-03-25', checkout: '2024-03-28' }
+}

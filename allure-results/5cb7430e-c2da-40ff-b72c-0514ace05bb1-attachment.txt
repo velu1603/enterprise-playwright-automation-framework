@@ -1,0 +1,13 @@
+2024-03-18T09:54:49Z [info]: Navigated to login.salesforce.com
+2024-03-18T09:54:50Z [info]: Filled username
+2024-03-18T09:54:50Z [info]: Filled pasword
+2024-03-18T09:54:52Z [info]: Clicked login button
+2024-03-18T09:55:07Z [error]: Error clicking login button: Error: Timed out 15000ms waiting for expect(locator).toBeVisible()
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: hidden
+Call log:
+  - expect.toBeVisible with timeout 15000ms
+  - waiting for getByTitle('Service')
+

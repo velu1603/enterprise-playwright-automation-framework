@@ -9,7 +9,7 @@ const apiActions = new APIActions();
 
 test("New booking with full body ",{tag:['@postApi','@api']}, async ({ request }) => {
   logger.info(`Sending post request`)
-    const requestBody = await createRandomBookingBody(8,'2024-03-19','2024-03-23')
+    const requestBody = await createRandomBookingBody(8,'2024-03-25','2024-03-28')
     // const requestBody = {
     //     "bookingid":2,
     //     "roomid":3,
@@ -25,6 +25,7 @@ test("New booking with full body ",{tag:['@postApi','@api']}, async ({ request }
     // }    
     
     logger.info(`Request body sent ${requestBody}`);
+    console.log(requestBody)  
     const response = await request.post(`booking/`, {
         data: requestBody
       });
@@ -33,7 +34,8 @@ test("New booking with full body ",{tag:['@postApi','@api']}, async ({ request }
       //expect(response.status()).toBe(201);
 
       const responseBody = await response.json();
-      expect(responseBody.bookingid).toBeGreaterThan(1);      
+      expect(responseBody.bookingid).toBeGreaterThan(1); 
+      console.log(response)     
       logger.info(`Response body  ${responseBody}`);
    
 })

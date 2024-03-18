@@ -17,3 +17,45 @@
 2024-03-15T17:38:39Z [info]: Filled pasword
 2024-03-15T17:38:41Z [info]: Clicked login button
 2024-03-15T17:38:50Z [info]: Service Title is visible
+2024-03-18T09:53:26Z [info]: Navigated to login.salesforce.com
+2024-03-18T09:53:26Z [info]: Filled username
+2024-03-18T09:53:26Z [info]: Filled pasword
+2024-03-18T09:53:29Z [info]: Clicked login button
+2024-03-18T09:53:44Z [error]: Error clicking login button: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: hidden
+Call log:
+  [2m- expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2024-03-18T09:54:49Z [info]: Navigated to login.salesforce.com
+2024-03-18T09:54:50Z [info]: Filled username
+2024-03-18T09:54:50Z [info]: Filled pasword
+2024-03-18T09:54:52Z [info]: Clicked login button
+2024-03-18T09:55:07Z [error]: Error clicking login button: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: hidden
+Call log:
+  [2m- expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2024-03-18T09:56:37Z [info]: Navigated to login.salesforce.com
+2024-03-18T09:56:37Z [info]: Filled username
+2024-03-18T09:56:37Z [info]: Filled pasword
+2024-03-18T09:56:40Z [info]: Clicked login button
+2024-03-18T09:56:48Z [info]: Service Title is visible
+2024-03-18T09:57:41Z [info]: Sending post request
+2024-03-18T09:57:41Z [info]: Request body sent [object Object]
+2024-03-18T09:57:42Z [info]: Response body  [object Object]
+2024-03-18T10:08:50Z [info]: Sending post request
+2024-03-18T10:08:50Z [info]: Request body sent [object Object]
+2024-03-18T10:08:51Z [info]: Response body  [object Object]
+2024-03-18T10:10:25Z [info]: Sending post request
+2024-03-18T10:10:25Z [info]: Request body sent [object Object]
+2024-03-18T10:42:35Z [info]: Sending post request
+2024-03-18T10:42:35Z [info]: Request body sent [object Object]
+2024-03-18T10:42:36Z [info]: Response body  [object Object]
