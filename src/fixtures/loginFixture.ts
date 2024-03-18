@@ -1,5 +1,5 @@
 import { test as base, expect as defaultExpect } from "@playwright/test";
-import LoginPage from "../pages/LoginPage";
+import {LoginPage} from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import { decrypt } from "../utils/CryptojsUtil";
 
@@ -8,7 +8,7 @@ type UIPages = {
 };
 
 export const expect = defaultExpect;
-// Define a custom fixture with page
+//Define a custom fixture with page
 export const test = base.extend<UIPages>({
   homePage: async ({ page }, use) => {
     const loginPage = new LoginPage(page);
@@ -19,3 +19,6 @@ export const test = base.extend<UIPages>({
     await use(homePage);
   },
 });
+
+
+
